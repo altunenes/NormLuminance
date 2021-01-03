@@ -14,8 +14,7 @@ print( " number of file at input folder==",number_files)
 os.mkdir('output') #output folder
 i=0
 
-x=np.array([])
-for img in glob.glob(inputfolder + "/*.bmp"):
+for img in glob.glob(inputfolder + "/*.bmp"):   #formats of given images
 
 
    image=cv2.imread(img)
@@ -26,7 +25,7 @@ for img in glob.glob(inputfolder + "/*.bmp"):
    test = cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB)
 
 
-   cv2.imwrite("output/image%04i.bmp"%i,test)
+   cv2.imwrite("output/image%04i.bmp"%i,test)  #desired format. I selected BMP which is perfect works with E-Prime 3.0 and E-Prime 2.0.
    i +=1
 
 
