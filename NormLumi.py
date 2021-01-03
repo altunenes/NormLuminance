@@ -14,7 +14,7 @@ print( " number of file at input folder==",number_files)
 os.mkdir('output') #output folder
 i=0
 
-for img in glob.glob(inputfolder + "/*.bmp"):   #formats of given images
+for img in glob.glob(inputfolder + "/*.*"):  
 
 
    image=cv2.imread(img)
