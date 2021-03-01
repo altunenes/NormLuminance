@@ -19,8 +19,8 @@ for img in glob.glob(inputfolder + "/*.*"):
 
    image=cv2.imread(img)
    hsv=cv2.cvtColor(image,cv2.COLOR_RGB2HSV)
-   normalizedImg = np.zeros((1200, 1200),dtype=np.uint8)
-   hsv[:,:,2]=cv2.normalize(hsv[:,:,2],normalizedImg,0,255,cv2.NORM_MINMAX)
+   normalizedImg = np.zeros((1200, 1200),dtype=np.uint8) #creating an empty array. NP zeros are equals dim of your images.
+   hsv[:,:,2]=cv2.normalize(hsv[:,:,2],normalizedImg,0,255,cv2.NORM_MINMAX)   #luminance is equals the v channel in hsv color space.
 
    test = cv2.cvtColor(hsv, cv2.COLOR_HSV2RGB)
 
