@@ -8,11 +8,6 @@ import os
 # ==========================================================================================================================================================
 """
 
-# Name to save the file
-name = 'test_image'
-
-# Name to find the folder
-name_folder = 'paint'
 
 # Ratio of the luminance
 ratio = 145.0
