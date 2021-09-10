@@ -13,10 +13,10 @@ import os
 ratio = 145.0
 
 # Name to find the folder where the images are stored
-folder_name = 'FolderName'
+folder_name = 'inputfolder'
 
-# Name to find the folder where the images are stored
-folder_name_save = 'Images_BGR'
+# Name to find the folder where the images will save
+folder_name_save = 'outputfolder'
 
 """
 # =========================================================================================================================================================
