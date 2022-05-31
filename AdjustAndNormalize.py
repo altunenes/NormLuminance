@@ -48,7 +48,7 @@ for file in list_files:
     # Normalize the luminance
     img_lum = (img_lum - np.min(img_lum)) / (np.max(img_lum) - np.min(img_lum))
 
-    # Normalize the luminance
+    # Adjust the luminance
     img_lum = img_lum * ratio
 
     # Put the luminance in the image
